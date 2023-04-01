@@ -7,39 +7,64 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pink cloud topic wall</title>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
 </head>
 
 <body>
-	<div id="topic-wall">
-		<div class="cloud" onclick="showWord('word1')">
-			<div class="cloud-text" id="word1">Word 1</div>
-		</div>
-		<div class="cloud" onclick="showWord('word2')">
-			<div class="cloud-text" id="word2">Word 2</div>
-		</div>
-		<div class="cloud" onclick="showWord('word3')">
-			<div class="cloud-text" id="word3">Word 3</div>
-		</div>
-		<div class="cloud" onclick="showWord('word4')">
-			<div class="cloud-text" id="word4">Word 4</div>
-		</div>
-		<div class="cloud" onclick="showWord('word5')">
-			<div class="cloud-text" id="word5">Word 5</div>
-		</div>
-		<div class="cloud" onclick="showWord('word6')">
-			<div class="cloud-text" id="word6">Word 6</div>
-		</div>
-		<div class="cloud" onclick="showWord('word7')">
-			<div class="cloud-text" id="word7">Word 7</div>
-		</div>
-		<div class="cloud" onclick="showWord('word8')">
-			<div class="cloud-text" id="word8">Word 8</div>
-		</div>
-		<div class="cloud" onclick="showWord('word9')">
-			<div class="cloud-text" id="word9">Word 9</div>
-		</div>
-		<div class="cloud" onclick="showWord('word10')">
-			<div class="cloud-text" id="word10
+
+    <body>
+        <div id="topic-wall">
+            <div class="cloud" onclick="showWord('1')">1</div>
+            <div class="cloud" onclick="showWord('2')">2</div>
+            <div class="cloud" onclick="showWord('3')">3</div>
+            <div class="cloud" onclick="showWord('4')">4</div>
+            <div class="cloud" onclick="showWord('5')">5</div>
+            <div class="cloud" onclick="showWord('6')">6</div>
+            <div class="cloud" onclick="showWord('7')">7</div>
+            <div class="cloud" onclick="showWord('8')">8</div>
+            <div class="cloud" onclick="showWord('9')">9</div>
+            <div class="cloud" onclick="showWord('10')">10</div>
+            <div class="cloud" onclick="showWord('11')">11</div>
+            <div class="cloud" onclick="showWord('12')">12</div>
+            <div class="cloud" onclick="showWord('13')">13</div>
+            <div class="cloud" onclick="showWord('14')">14</div>
+            <div class="cloud" onclick="showWord('15')">15</div>
+            <div class="cloud" onclick="showWord('16')">16</div>
+            <div class="cloud" onclick="showWord('17')">17</div>
+            <div class="cloud" onclick="showWord('18')">18</div>
+            <div class="cloud" onclick="showWord('19')">19</div>
+            <div class="cloud" onclick="showWord('20')">20</div>
+            <div class="cloud" onclick="showWord('21')">21</div>
+            <div class="cloud" onclick="showWord('22')">22</div>
+            <div class="cloud" onclick="showWord('23')">23</div>
+            <div class="cloud" onclick="showWord('24')">24</div>
+            <div class="cloud" onclick="showWord('25')">25</div>
+            <div class="cloud" onclick="showWord('26')">26</div>
+            <div class="cloud" onclick="showWord('27')">27</div>
+            <div class="cloud" onclick="showWord('28')">28</div>
+            <div class="cloud" onclick="showWord('29')">29</div>
+            <div class="cloud" onclick="showWord('30')">30</div>
+            <div class="cloud" onclick="showWord('31')">31</div>
+            <div class="cloud" onclick="showWord('32')">32</div>
+            <div class="cloud" onclick="showWord('33')">33</div>
+            <div class="cloud" onclick="showWord('34')">34</div>
+            <div class="cloud" onclick="showWord('35')">35</div>
+            <div class="cloud" onclick="showWord('36')">36</div>
+            <div class="cloud" onclick="showWord('37')">37</div>
+            <div class="cloud" onclick="showWord('38')">38</div>
+            <div class="cloud" onclick="showWord('39')">39</div>
+            <div class="cloud" onclick="showWord('40')">40</div>
+        </div>    <script>
+            const clouds = document.getElementsByClassName("cloud");
+            const words = ["Sunshine", "Rainbow", "Unicorn", "Flower", "Love", "Happiness", "Magic", "Peace", "Joy", "Smile", "Hope", "Kindness", "Dream", "Believe", "Wonder", "Inspire", "Explore", "Adventure", "Gratitude", "Harmony", "Blessings", "Laughter", "Growth", "Courage", "Wisdom", "Beauty", "Patience", "Passion", "Creativity", "Imagination", "Freedom", "Empathy", "Compassion", "Integrity", "Humility", "Generosity", "Perseverance", "Resilience", "Faith", "Trust", "Serenity", "Balance"];
+      
+            function showWord(id) {
+              const cloud = clouds[id - 1];
+              const usedWords = Array.from(clouds).map(cloud => cloud.innerHTML);
+              const availableWords = words.filter(word => !usedWords.includes(word));
+              const word = availableWords[Math.floor(Math.random() * availableWords.length)];
+              cloud.innerHTML = word;
+              cloud.onclick = null;
+            }
+          </script>
+        </body>
+        </html>
