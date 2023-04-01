@@ -24,7 +24,7 @@ h2 {
     font-size: 32px;
 }
 .cloud {
-    background-image: url("/cloud.png");
+    background-image: url("https://github.com/hypergeek-dev/topicwall/blob/2f079b175cade9bf4399711199c38d83fb87ded6/cloud.png");
     background-color: #fff;
     background-size: contain;
     width: 300px;
