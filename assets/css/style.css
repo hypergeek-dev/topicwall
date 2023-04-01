@@ -24,7 +24,7 @@ h2 {
     font-size: 32px;
 }
 .cloud {
-  background-image: url("https://ibb.co/QKRZyMW");
+  background-image: url(/cloud.png);
     background-color: #fff;
     background-size: contain;
     width: 300px;
@@ -71,26 +71,7 @@ h1 {
 h2 {
     font-size: 32px;
 }
-.cloud {
-    background-image: url('cloud.png');
-    background-color: #fff;
-    background-size: contain;
-    width: 300px;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    font-size: 40px;
-    color: #fff;
-    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease;
-    text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black,
-    1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
-  }
-  
+
 
   .cloud:hover {
     transform: scale(1.1);
