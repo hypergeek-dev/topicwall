@@ -24,7 +24,7 @@ h2 {
     font-size: 32px;
 }
 .cloud {
-    background-image: url('/cloud.png');
+    background-image: url('/assets/images/cloud.png');
     background-color: #fff;
     background-size: contain;
     width: 300px;
