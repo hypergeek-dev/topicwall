@@ -46,3 +46,52 @@ h2 {
   .cloud:hover {
     transform: scale(1.1);
   }
+* {font-family: 'Bree Serif', serif;
+}
+  
+#topic-wall {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+  justify-items: center;
+}
+
+header {
+    text-align: center;
+    color: purple;
+    text-shadow: 2px 0 black, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+font-weight: lighter;
+letter-spacing: 4px;
+}
+h1 {
+    font-size: 64px;
+}
+
+h2 {
+    font-size: 32px;
+}
+.cloud {
+    background-image: url('cloud.png');
+    background-color: #fff;
+    background-size: contain;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black,
+    1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+  }
+  
+
+  .cloud:hover {
+    transform: scale(1.1);
+  }
